@@ -9,7 +9,7 @@
     <h3>removeEventListener()- usuwa obsługę zdarzenia</h3>
     <div id="test">To jest DIV
         <p>kliknij przycisk aby usunąć zdarzenie</p>
-        <button onlcick="removeEvent()">usuń zdarzenie</button>
+        <button onclick="removeEvents()">usuń zdarzenie</button>
     </div>
     <p id="demo"></p>
     <style>
@@ -25,7 +25,7 @@
         function myFunction(){
             document.querySelector("#demo").innerHTML=Math.random();
         }
-        function removeEvent(){
+        function removeEvents(){
             document.querySelector("#test").removeEventListener("mousemove",myFunction);
         }
     </script>
