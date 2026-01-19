@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>
+            Wpisz wartość liczbową od 1 do 100:<br>
+            <input type="number" min="1" max="100" id="wartosc">
+            <input type="range" min="1" max="100" id="zakres"><br> 
+        </label>
+    </form><br>
+    <p id="wynik"></p>
+    <script>
+        let wartosc = document.querySelector("#wartosc");
+        let zakres = document.querySelector("#zakres");
+        wartosc.addEventListener("change", zmienna);
+        function zmienna(){
+            document.getElementById("#zakres").value = wartosc.value;
+        }
+    </script>
+</body>
+</html>
