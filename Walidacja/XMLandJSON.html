@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane XML i JSON</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <uczen>
+        <imie>Łukasz </imie><nazwisko>Targosz </nazwisko><wiek>18 </wiek><klasa>4TIB </klasa><wzrost>173cm</wzrost>
+    </uczen>
+    <script>
+        const uczen={"name":"Łukasz","nazwisko": "Targosz","age":18,"klasa":"4TIB","wzrost":"173cm"};
+        const myjson = JSON.stringify(uczen);
+        document.querySelector("#demo").innerHTML = myjson;
+    </script>
+</body>
+</html>
