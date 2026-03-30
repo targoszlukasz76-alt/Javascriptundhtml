@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hover() </title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <h1>Hover() - obsługuje dwa zdarzenia: mouseenter i mouseout</h1>
+    <p id="akapit">Pierwszy akapit</p>
+    <p>Drugi akapit</p>
+    <script>
+        $(function(){
+            $('#akapit').hover( function(){
+                alert("Witaj na mojej stronie");
+            }, function(){
+                alert("Do zobaczenia na mojej stronie");
+            });
+        });
+    </script>
+</body>
+</html>
