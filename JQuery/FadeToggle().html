@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fadeToggle() </title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <h1>fadeToggle() - uruchamianie naprzemienie ukrywanie i wyświetlanie elementu</h1>
+    <button id="fadeToggle">Wyświetl diva - Ukryj diva</button>
+    <div style="width: 300; height: 300; background-color: red; display: none;" id="div1">Pierwszy akapit</div>
+    <script>
+        $(function(){
+            $("#fadeToggle").click(function(){
+                $("#div1").fadeToggle(3000);
+            });
+        });
+    </script>
+</body>
+</html>
