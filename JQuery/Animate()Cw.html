@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacja</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+        $( function($){
+            $("button").click( function(){
+                $("div").animate( { left: "250px", opacity:"0.5", height:"50px",width:"50px"});
+                $("div").animate( { top: "250px"});
+                $("div").animate( { left: "2px"});
+                $("div").animate( { top: "25px",opacity:"1", height:"100", width:"100"})});
+            });
+    </script>
+    <button>Start animation</button>
+    <div style="background: green;height: 100px;width: 100px;position: absolute;"></div>
+</body>
+</html>
