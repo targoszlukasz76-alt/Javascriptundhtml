@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add class , remove class</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+        $( function($){
+            $("#1").click( function(){
+                $("p").addClass("red");
+                });
+            $("#2").click(function(){
+                $("p").removeClass("red")
+            })
+            })
+    </script>
+    <style>
+        .red{ color: red;}
+    </style>
+    <p>This is a paragraph</p>
+    <button id="1">Add class to p element</button>
+    <button id="2">Remove class </button>
+</body>
+</html>

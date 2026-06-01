@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle class</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+        $( function($){
+            $("button").click( function(){
+                $("p").toggleClass("red");
+                });
+            })
+    </script>
+    <style>
+        .red{ color: red;}
+    </style>
+    <p>This is a paragraph</p>
+    <button>Toggle class</button>
+</body>
+</html>
